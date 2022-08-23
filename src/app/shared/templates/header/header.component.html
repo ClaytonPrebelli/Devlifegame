@@ -1,0 +1,12 @@
+<div class="header-box">
+    <img src="assets/images/logo.png" alt="Dev Life Game" class="logo">
+    <div class="menu" [class.menu-expanded]="menuExpand">
+        <p-progressBar mode="determinate" [showValue]="false" [value]="statusMenu" class="menu--barra"></p-progressBar>
+        <div class="menu--item" [class.itemActive]="menus[0]" (click)="encheMenu('home')"><img src="{{home}}" alt="home" class="menu--item--icon"> Home</div>
+        <div class="menu--item" [class.itemActive]="menus[1]" (click)="encheMenu('person')"><img src="{{person}}" alt="personagem" class="menu--item--icon"> Personagem</div>
+        <div class="menu--item" [class.itemActive]="menus[2]" (click)="encheMenu('mission')"><img src="{{mission}}" alt="missões" class="menu--item--icon"> Missões</div>
+        <div class="menu--item" [class.itemActive]="menus[3]" (click)="encheMenu('invite')"><img src="{{invite}}" alt="convidar" class="menu--item--icon"> Convidar</div>
+    </div>
+    <div class="menu--start" [class.start-active]="start" (click)="startGame()"><h2 class="menu--start--title" [class.start-active--title]="titleStart">Start</h2></div>
+   
+</div>
